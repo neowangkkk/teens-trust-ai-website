@@ -1,0 +1,220 @@
+{
+  "project": {
+    "title": "Teens Trust AI More Than They Should",
+    "subtitle": "A Study of Canadian High School Students' AI Risk Perception",
+    "date": "December 5, 2025",
+    "surveyResponses": 156,
+    "interviews": 32,
+    "schools": 16,
+    "studentResearchers": 25,
+    "duration": "June – September 2025",
+    "organization": "LinkedKey Foundation — Leading Tomorrow Program",
+    "mentor": "Professor Tao Wang, Faculty of Information, University of Toronto"
+  },
+
+  "researchers": [
+    "Aaron Chen", "Isabelle Chung", "Ken Deng", "Shannon Gao", "Elsa Gu",
+    "Daniel Hou", "Sophia Hou", "Tommy Hou", "Celine Liu", "Sam Liu",
+    "Trinity Liu", "Aileen Ma", "Matteo Pagniello", "Tony Pan", "Justin Wang",
+    "Leo Wang", "Xuan He Wang", "Nancy Wu", "Sabrina Wu", "Victoria Xiong",
+    "Emily Yang", "Gavin Yin", "Annabelle Zhang", "Sophia Zhao", "Edgar Zhou"
+  ],
+
+  "schools": {
+    "public": [
+      "Etobicoke Collegiate Institute",
+      "Maple High School",
+      "Harold M. Brathwaite Secondary School",
+      "Newmarket High School",
+      "North Toronto Collegiate Institute",
+      "Craig Kielburger Secondary School",
+      "Rick Hansen Secondary School",
+      "White Oaks Secondary School",
+      "Stephen Lewis Secondary School",
+      "Woburn Collegiate Institute",
+      "Markville Secondary School",
+      "Pickering High School"
+    ],
+    "private": [
+      "Bayview Glen School",
+      "Toronto French School (TFS)",
+      "Holy Trinity School (HTS)",
+      "St. Michael's College School"
+    ]
+  },
+
+  "researchQuestions": [
+    "How do teenagers encounter and use AI in daily life?",
+    "How do teenagers demonstrate understanding and critical awareness of AI systems?",
+    "How do parents and educators influence teenagers' attitudes toward and usage of AI?"
+  ],
+
+  "usageData": {
+    "frequency": [
+      { "label": "Daily", "value": 19.0 },
+      { "label": "A few times a week", "value": 35.5 },
+      { "label": "Once a week", "value": 12.4 },
+      { "label": "Once a month", "value": 12.4 },
+      { "label": "Rarely / never", "value": 20.7 }
+    ],
+    "userCategories": [
+      { "label": "Frequent Users", "value": 55, "description": "Use AI more than once a week" },
+      { "label": "Non-frequent Users", "value": 24, "description": "Use AI once a week or less" },
+      { "label": "Non-users", "value": 21, "description": "Rarely or never use AI" }
+    ],
+    "byGender": {
+      "categories": ["Frequent", "Non-frequent", "Non-user"],
+      "female": [59.7, 22.4, 17.9],
+      "male": [51.2, 34.1, 14.6]
+    },
+    "byGrade": {
+      "categories": ["Frequent", "Non-frequent", "Non-user"],
+      "grade9to10": [37.0, 33.3, 29.6],
+      "grade11to12": [67.6, 19.1, 13.2]
+    },
+    "toolsUsed": [
+      { "label": "Chatbots (e.g. ChatGPT, DeepSeek)", "value": 46.4 },
+      { "label": "Grammar/Writing Aids (e.g. Grammarly, Quillbot)", "value": 31.1 },
+      { "label": "Art/Design Generators (e.g. DALL·E, Gemini)", "value": 12.3 },
+      { "label": "Video/Music Generation (e.g. Sora)", "value": 7.7 },
+      { "label": "Others", "value": 1.7 }
+    ],
+    "guidance": {
+      "school": { "public": 50.0, "private": 69.0 },
+      "parent": { "public": 43.0, "private": 44.8 }
+    }
+  },
+
+  "riskPerception": {
+    "performance": {
+      "items": [
+        { "id": "A", "label": "Harm to ability to learn", "score": 3.80 },
+        { "id": "B", "label": "Harm to critical thinking", "score": 3.90 },
+        { "id": "C", "label": "Tool malfunction concerns", "score": 2.93 },
+        { "id": "D", "label": "Weakened writing skills", "score": 3.58 }
+      ],
+      "byUsage": { "frequent": 3.36, "nonFrequent": 3.69 },
+      "overall": 3.55
+    },
+    "privacy": {
+      "items": [
+        { "id": "A", "label": "Data misuse by AI companies", "score": 3.24 },
+        { "id": "B", "label": "Exposure to scams/grooming", "score": 2.60 }
+      ],
+      "byUsage": { "frequent": 2.61, "nonFrequent": 3.10 },
+      "overall": 2.92
+    },
+    "misinformation": {
+      "items": [
+        { "id": "A", "label": "Incorrect/biased/harmful info", "score": 3.58 },
+        { "id": "B", "label": "Opacity of AI processes", "score": 2.83 },
+        { "id": "C", "label": "AI decisions without supervision", "score": 3.09 }
+      ],
+      "byUsage": { "frequent": 2.95, "nonFrequent": 3.39 },
+      "overall": 3.17
+    },
+    "socialPsychological": {
+      "items": [
+        { "id": "A", "label": "Loneliness/social isolation", "score": 2.83 },
+        { "id": "B", "label": "Unfairness/discrimination", "score": 2.81 },
+        { "id": "C", "label": "Emotional manipulation", "score": 3.70 }
+      ],
+      "byUsage": { "frequent": 2.82, "nonFrequent": 3.32 },
+      "overall": 3.11
+    },
+    "overallByCategory": [
+      { "category": "Performance", "allRespondents": 3.55, "frequentUsers": 3.36 },
+      { "category": "Privacy", "allRespondents": 2.92, "frequentUsers": 2.62 },
+      { "category": "Misinformation", "allRespondents": 3.17, "frequentUsers": 2.95 },
+      { "category": "Social/Psych", "allRespondents": 3.11, "frequentUsers": 2.82 }
+    ],
+    "byGuidance": {
+      "school": {
+        "withGuidance":    { "performance": 3.56, "privacy": 3.02, "misinformation": 3.23, "social": 3.15 },
+        "withoutGuidance": { "performance": 3.55, "privacy": 2.81, "misinformation": 3.08, "social": 3.08 }
+      },
+      "parent": {
+        "withGuidance":    { "performance": 3.39, "privacy": 2.85, "misinformation": 3.04, "social": 2.87 },
+        "withoutGuidance": { "performance": 3.67, "privacy": 2.98, "misinformation": 3.26, "social": 3.29 }
+      }
+    },
+    "bySchoolType": {
+      "public":  { "performance": 3.48, "privacy": 2.92, "misinformation": 3.22, "social": 3.06 },
+      "private": { "performance": 3.79, "privacy": 2.93, "misinformation": 3.00, "social": 3.29 }
+    },
+    "byGender": {
+      "male":   { "performance": 3.41, "privacy": 2.88, "misinformation": 3.17, "social": 3.05 },
+      "female": { "performance": 3.65, "privacy": 2.85, "misinformation": 3.17, "social": 3.16 }
+    }
+  },
+
+  "interviewQuotes": {
+    "dataSharingAttitudes": [
+      {
+        "quote": "Like basically everything, like, you know, obviously not like my Social Security number, my like passport, not like those type of stuff, but like everything else, sure.",
+        "theme": "Casual data sharing"
+      },
+      {
+        "quote": "How much control do you feel you have over what personal data AI collects about you? 0%.",
+        "theme": "Perceived helplessness"
+      }
+    ],
+    "aiEmotionalSupport": [
+      {
+        "quote": "Using ChatGPT for therapy or coping mechanisms and vent thoughts also works.",
+        "theme": "AI as therapist"
+      },
+      {
+        "quote": "People say don't do that but I don't see the harm in it.",
+        "theme": "Dismissing concerns"
+      },
+      {
+        "quote": "It's more empathetic and you don't bother anyone.",
+        "theme": "Perceived empathy"
+      },
+      {
+        "quote": "ChatGPT will pretty much align with whatever you say. It is less prominent but still there.",
+        "theme": "Validation bias"
+      }
+    ],
+    "drawingBoundaries": [
+      {
+        "quote": "Never asks AI for emotional advice — only uses it for academic stuff.",
+        "theme": "Academic-only use"
+      },
+      {
+        "quote": "Friends would always be better for personal matters.",
+        "theme": "Human preference"
+      },
+      {
+        "quote": "AI is not my therapist.",
+        "theme": "Clear boundary"
+      }
+    ]
+  },
+
+  "conclusions": [
+    "AI is deeply integrated into student life, especially for academic tasks, and usage increases with grade level and among female students.",
+    "Risk awareness exists but remains low overall, especially for privacy, cybersecurity, and emotional risks.",
+    "Frequent users show significantly lower concern across all risk categories, suggesting that habituated use reduces perceived risk even when vulnerabilities remain.",
+    "A minority of teens use AI for emotional support, viewing it as empathetic or nonjudgmental, creating potential psychological risks.",
+    "The findings reveal a widening gap between actual risks and students' perceived risks, underscoring the need for targeted education."
+  ],
+
+  "recommendations": {
+    "forSchools": [
+      "Integrate AI literacy into curricula, including misinformation detection, ethical use, privacy basics, and AI limitations.",
+      "Provide clear, age-appropriate guidelines for academic use to reduce over-reliance and protect learning integrity.",
+      "Implement structured discussions about emotional boundaries with AI."
+    ],
+    "forParents": [
+      "Encourage open dialogue about students' AI habits and discuss risk awareness, especially around privacy and emotional use.",
+      "Model responsible AI practices at home and align expectations with school guidelines."
+    ],
+    "forPolicymakers": [
+      "Strengthen AI safety standards for youth, including data protection and transparency requirements.",
+      "Support teacher training to help educators guide students through safe and effective AI use.",
+      "Promote nationwide digital literacy initiatives that empower teens to critically evaluate AI outputs and manage risks."
+    ]
+  }
+}
