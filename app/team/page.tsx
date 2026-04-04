@@ -50,7 +50,7 @@ export default function TeamPage() {
       {/* Mentor */}
       <section className="bg-light-gray py-16 mb-16">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="font-display text-2xl md:text-3xl font-bold mb-8">Faculty Mentor</h2>
+          <h2 className="font-display text-2xl md:text-3xl font-bold mb-8">Academic Advisor</h2>
           <div className="bg-white rounded-2xl p-8 shadow-sm">
             <h3 className="font-display text-xl font-semibold mb-2">Professor Tao Wang</h3>
             <p className="text-accent font-medium text-sm mb-4">Faculty of Information, University of Toronto</p>
