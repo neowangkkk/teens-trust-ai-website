@@ -3,13 +3,13 @@ import PhotoGrid from '@/components/PhotoGrid'
 import data from '@/content/research-data.json'
 
 const galleryPhotos = [
-  { src: '/images/group-photo-stage.jpg', alt: 'All student researchers on stage at the LinkedKey Foundation event' },
-  { src: '/images/classroom-session-1.jpg', alt: 'Students in a classroom during a research training session' },
-  { src: '/images/students-teamwork.jpg', alt: 'Students collaborating as a team on research tasks' },
-  { src: '/images/students-working-1.jpg', alt: 'Students focused on their research work' },
-  { src: '/images/students-working-2.jpg', alt: 'Students at desks working on data analysis' },
-  { src: '/images/students-working-3.jpg', alt: 'Students engaged in research activities' },
-  { src: '/images/students-discussion.jpg', alt: 'A small group of students in discussion' },
+  { src: '/teens-trust-ai-website/images/group-photo-stage.jpg', alt: 'All student researchers on stage at the LinkedKey Foundation event' },
+  { src: '/teens-trust-ai-website/images/classroom-session-1.jpg', alt: 'Students in a classroom during a research training session' },
+  { src: '/teens-trust-ai-website/images/students-teamwork.jpg', alt: 'Students collaborating as a team on research tasks' },
+  { src: '/teens-trust-ai-website/images/students-working-1.jpg', alt: 'Students focused on their research work' },
+  { src: '/teens-trust-ai-website/images/students-working-2.jpg', alt: 'Students at desks working on data analysis' },
+  { src: '/teens-trust-ai-website/images/students-working-3.jpg', alt: 'Students engaged in research activities' },
+  { src: '/teens-trust-ai-website/images/students-discussion.jpg', alt: 'A small group of students in discussion' },
 ]
 
 export default function TeamPage() {

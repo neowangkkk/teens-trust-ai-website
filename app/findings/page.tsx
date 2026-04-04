@@ -117,7 +117,7 @@ export default function FindingsPage() {
             {/* Photo */}
             <div className="relative aspect-[21/9] rounded-2xl overflow-hidden shadow-lg mb-8">
               <Image
-                src="/images/students-collaborating-2.jpg"
+                src="/teens-trust-ai-website/images/students-collaborating-2.jpg"
                 alt="Students discussing research data at a table"
                 fill
                 className="object-cover"

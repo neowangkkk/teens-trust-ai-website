@@ -36,7 +36,7 @@ export default function VoicesPage() {
       <section className="max-w-6xl mx-auto px-4 mb-16">
         <div className="relative aspect-[21/9] rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/images/students-collaborating-1.jpg"
+            src="/teens-trust-ai-website/images/students-collaborating-1.jpg"
             alt="Two students working together closely during an interview session"
             fill
             className="object-cover"
@@ -62,7 +62,7 @@ export default function VoicesPage() {
       <section className="max-w-6xl mx-auto px-4">
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/images/students-interview.jpg"
+            src="/teens-trust-ai-website/images/students-interview.jpg"
             alt="A student during a one-on-one interview for the research project"
             fill
             className="object-cover"

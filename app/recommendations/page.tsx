@@ -37,7 +37,7 @@ export default function RecommendationsPage() {
       <section className="max-w-6xl mx-auto px-4 mb-16">
         <div className="relative aspect-[21/9] rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/images/students-presenting.jpg"
+            src="/teens-trust-ai-website/images/students-presenting.jpg"
             alt="A student giving a presentation of research findings"
             fill
             className="object-cover"
@@ -93,7 +93,7 @@ export default function RecommendationsPage() {
           data tables, and analysis.
         </p>
         <a
-          href="/FinalReport1205.pdf"
+          href="/teens-trust-ai-website/FinalReport1205.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-8 py-3 bg-accent text-navy font-semibold rounded-full hover:bg-accent/90 transition-colors shadow-md"

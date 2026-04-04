@@ -20,7 +20,7 @@ export default function AboutPage() {
       <section className="max-w-6xl mx-auto px-4 mb-16">
         <div className="relative aspect-[21/9] rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/images/classroom-session-1.jpg"
+            src="/teens-trust-ai-website/images/classroom-session-1.jpg"
             alt="Students in a classroom during a research training session"
             fill
             className="object-cover"
@@ -101,7 +101,7 @@ export default function AboutPage() {
       <section className="max-w-6xl mx-auto px-4 mb-16 grid md:grid-cols-2 gap-12 items-center">
         <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/images/classroom-presentation.jpg"
+            src="/teens-trust-ai-website/images/classroom-presentation.jpg"
             alt="A speaker presenting to students during the research program"
             fill
             className="object-cover"

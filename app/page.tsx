@@ -36,7 +36,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/group-photo-stage.jpg"
+          src="/teens-trust-ai-website/images/group-photo-stage.jpg"
           alt="All 25 student researchers on stage at the LinkedKey Foundation event"
           fill
           className="object-cover"
@@ -111,7 +111,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="/images/students-collaborating-2.jpg"
+              src="/teens-trust-ai-website/images/students-collaborating-2.jpg"
               alt="Students discussing research findings at a table"
               fill
               className="object-cover"

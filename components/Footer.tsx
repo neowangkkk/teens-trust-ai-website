@@ -20,7 +20,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-sm mb-3 uppercase tracking-wider text-white/80">Resources</h4>
             <a
-              href="/FinalReport1205.pdf"
+              href="/teens-trust-ai-website/FinalReport1205.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-sm text-accent hover:text-accent/80 transition-colors"
