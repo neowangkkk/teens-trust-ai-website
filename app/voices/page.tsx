@@ -14,6 +14,11 @@ const sections = [
     quotes: data.interviewQuotes.aiEmotionalSupport,
   },
   {
+    title: 'AI and Group Work',
+    description: 'AI is changing how students collaborate on schoolwork — and not always for the better.',
+    quotes: data.interviewQuotes.aiAndGroupWork,
+  },
+  {
     title: 'Drawing Boundaries',
     description: 'Other students maintain clear limits on how they engage with AI.',
     quotes: data.interviewQuotes.drawingBoundaries,

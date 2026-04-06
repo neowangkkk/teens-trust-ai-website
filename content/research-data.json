@@ -49,6 +49,13 @@
     "How do parents and educators influence teenagers' attitudes toward and usage of AI?"
   ],
 
+  "highlightStats": {
+    "weeklyUse": 55,
+    "monthlyUse": 79,
+    "heardOfAI": 97.5,
+    "personalDevice": 98.4
+  },
+
   "usageData": {
     "frequency": [
       { "label": "Daily", "value": 19.0 },
@@ -82,8 +89,65 @@
     "guidance": {
       "school": { "public": 50.0, "private": 69.0 },
       "parent": { "public": 43.0, "private": 44.8 }
-    }
+    },
+    "aiLearningSources": [
+      { "label": "Social Media", "value": 87 },
+      { "label": "School", "value": 63 },
+      { "label": "Friends/Peers", "value": 45 },
+      { "label": "News Media", "value": 39 },
+      { "label": "Parents", "value": 17 }
+    ]
   },
+
+  "comfortParadox": {
+    "description": "The more teens use AI, the less they believe risks outweigh benefits",
+    "correlation": { "r": -0.50, "p": 0.0001 },
+    "byFrequency": [
+      { "label": "Rarely/Never", "score": 4.00 },
+      { "label": "Once a month", "score": 3.44 },
+      { "label": "Once a week", "score": 3.17 },
+      { "label": "Few times/week", "score": 2.67 },
+      { "label": "Daily", "score": 2.23 }
+    ]
+  },
+
+  "rankedRiskItems": [
+    { "label": "Harm to critical thinking", "score": 3.90, "agreement": 71, "category": "Performance" },
+    { "label": "Harm to ability to learn", "score": 3.80, "agreement": 67, "category": "Performance" },
+    { "label": "Emotional manipulation by AI", "score": 3.70, "agreement": 57, "category": "Social/Psychological" },
+    { "label": "Weakening writing/grammar skills", "score": 3.58, "agreement": 59, "category": "Performance" },
+    { "label": "AI giving incorrect/biased info", "score": 3.58, "agreement": 59, "category": "Misinformation" },
+    { "label": "AI companies misusing personal data", "score": 3.24, "agreement": 43, "category": "Privacy" },
+    { "label": "AI decisions without human oversight", "score": 3.09, "agreement": 36, "category": "Misinformation" },
+    { "label": "AI causing technical problems", "score": 2.93, "agreement": null, "category": "Performance" },
+    { "label": "Loneliness and social isolation", "score": 2.83, "agreement": null, "category": "Social/Psychological" },
+    { "label": "Exposure to scams or grooming", "score": 2.60, "agreement": null, "category": "Privacy" }
+  ],
+
+  "safetyBlindSpot": {
+    "doWorryAbout": [
+      { "label": "Will AI make me a worse thinker?", "score": 3.90 },
+      { "label": "Will my writing skills get worse?", "score": 3.58 },
+      { "label": "Is the AI giving me wrong info?", "score": 3.58 }
+    ],
+    "dontWorryAbout": [
+      { "label": "Online scams, grooming, safety threats", "score": 2.60 },
+      { "label": "AI making unfair decisions about me", "score": 2.81 },
+      { "label": "Feeling lonely because of AI", "score": 2.83 }
+    ]
+  },
+
+  "trustAndOpenness": {
+    "trustAIFeedback": { "score": 2.51, "disagreePercent": 57, "description": "I trust AI feedback as much as a teacher's" },
+    "openToAIInLearning": { "score": 3.53, "agreePercent": 57, "description": "I am open to using AI in learning" }
+  },
+
+  "equityGap": [
+    { "metric": "School provides AI guidance", "public": 50, "private": 69 },
+    { "metric": "Received formal AI training", "public": 41, "private": 55 },
+    { "metric": "Parent discussed AI safety", "public": 43, "private": 44 },
+    { "metric": "Frequent AI users", "public": 58, "private": 41 }
+  ],
 
   "riskPerception": {
     "performance": {
@@ -177,6 +241,24 @@
         "theme": "Validation bias"
       }
     ],
+    "aiAndGroupWork": [
+      {
+        "quote": "Some of my group mates have used AI to completely generate their parts of the project... resulting in inconsistent quality and tone.",
+        "theme": "Over-reliance"
+      },
+      {
+        "quote": "People get flagged by AI detectors even for original work, and it creates stress and mistrust between students and teachers.",
+        "theme": "AI detector anxiety"
+      },
+      {
+        "quote": "I think using AI to deepen understanding is a positive use. But using it as a complete substitute for original work is negative.",
+        "theme": "Good vs. bad use"
+      },
+      {
+        "quote": "AI is replacing the brainstorming and discussion that used to happen in group work. We used to actually talk about ideas.",
+        "theme": "Lost collaboration"
+      }
+    ],
     "drawingBoundaries": [
       {
         "quote": "Never asks AI for emotional advice — only uses it for academic stuff.",
@@ -215,6 +297,50 @@
       "Strengthen AI safety standards for youth, including data protection and transparency requirements.",
       "Support teacher training to help educators guide students through safe and effective AI use.",
       "Promote nationwide digital literacy initiatives that empower teens to critically evaluate AI outputs and manage risks."
+    ],
+    "forEducators": [
+      {
+        "title": "Teach WITH AI, Not Against It",
+        "description": "57% of teens are open to AI in learning, but 71% worry it will harm their thinking. Design assignments that require students to critically evaluate AI outputs rather than banning AI entirely."
+      },
+      {
+        "title": "Address the AI Detector Problem",
+        "description": "Students report anxiety about AI detectors flagging their original work. Consider process-based assessment (drafts, reflections, oral explanations) instead of relying solely on detection tools."
+      },
+      {
+        "title": "Don't Assume Gender Stereotypes",
+        "description": "Girls use AI just as much or more than boys (60% vs 51% frequent users). AI literacy programming should be designed for all students, not stereotyped toward 'tech-oriented' youth."
+      },
+      {
+        "title": "Focus on the Thinking, Not the Tool",
+        "description": "Students' top concern is losing their ability to think critically. Help them build metacognitive skills: when to use AI, when to struggle on their own, and how to recognize when AI is weakening their understanding."
+      }
+    ],
+    "forYouthWorkers": [
+      {
+        "title": "Fill the Parent Gap on AI Safety",
+        "description": "Only 43% of parents have discussed AI safety. Youth workers can provide the trusted, non-judgmental space where teens can ask questions about AI that they can't or won't ask at home or school."
+      },
+      {
+        "title": "Address the Safety Blind Spot",
+        "description": "Teens rate online scams and grooming as their LOWEST AI concern (2.60/5). Create engaging workshops that demonstrate these risks concretely — not with lectures, but with live demos."
+      },
+      {
+        "title": "Support the Emotional Dimension",
+        "description": "57% of teens are concerned about emotional manipulation by AI. Youth workers should be prepared to discuss AI companionship, boundary-setting with chatbots, and recognizing when AI interactions become unhealthy."
+      },
+      {
+        "title": "Reach Younger Teens Early",
+        "description": "Gr. 9-10 students use AI less frequently (37% frequent users) but are at a formative stage. This is the ideal window for building critical AI literacy BEFORE heavy usage begins."
+      }
     ]
-  }
+  },
+
+  "keyTakeaways": [
+    { "title": "AI is already mainstream for teens", "description": "55% use it weekly for school — this is not a future trend, it's today's reality." },
+    { "title": "Teens worry about losing their ability to think", "description": "Performance risk, not privacy, is their top concern. They know AI could weaken them." },
+    { "title": "The more they use AI, the less they worry", "description": "Heavy users may be underestimating real risks. Familiarity breeds comfort, not mastery." },
+    { "title": "Social media is their AI teacher", "description": "Parents and schools are falling behind. Libraries and trusted institutions can fill this gap." },
+    { "title": "Teens want guidance, not gatekeeping", "description": "57% are open to AI in learning but prefer teacher feedback. Help them use it well." }
+  ]
 }

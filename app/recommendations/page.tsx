@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import data from '@/content/research-data.json'
 
-const cards = [
+const originalCards = [
   {
     title: 'For Schools',
     icon: '🏫',
@@ -22,14 +22,28 @@ const cards = [
   },
 ]
 
+const BORDER_COLORS = [
+  'border-l-teal-500',
+  'border-l-red-400',
+  'border-l-emerald-500',
+  'border-l-amber-500',
+]
+
+const CARD_BGS = [
+  'bg-teal-50',
+  'bg-pink-50',
+  'bg-emerald-50',
+  'bg-amber-50',
+]
+
 export default function RecommendationsPage() {
   return (
     <div className="pt-24 pb-20">
       <section className="max-w-4xl mx-auto px-4 mb-16">
         <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">Recommendations</h1>
         <p className="text-lg text-navy/70 leading-relaxed">
-          Based on our findings, we propose actionable steps for the three groups best positioned
-          to help teens navigate AI safely: schools, parents, and policymakers.
+          Based on our findings, we propose actionable steps for those best positioned
+          to help teens navigate AI safely: educators, youth workers, parents, and policymakers.
         </p>
       </section>
 
@@ -46,10 +60,39 @@ export default function RecommendationsPage() {
         </div>
       </section>
 
-      {/* Cards */}
+      {/* For Educators */}
       <section className="max-w-6xl mx-auto px-4 mb-16">
+        <h2 className="font-display text-2xl md:text-3xl font-bold mb-2">For Educators: Rethinking AI in the Classroom</h2>
+        <p className="text-navy/60 mb-8">How to teach WITH AI rather than against it</p>
+        <div className="space-y-4">
+          {data.recommendations.forEducators.map((rec, i) => (
+            <div key={i} className={`${CARD_BGS[i % CARD_BGS.length]} border-l-4 ${BORDER_COLORS[i % BORDER_COLORS.length]} rounded-r-xl p-6`}>
+              <h3 className="font-display font-bold text-navy mb-2">{rec.title}</h3>
+              <p className="text-sm text-navy/70 leading-relaxed">{rec.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* For Youth & Social Workers */}
+      <section className="max-w-6xl mx-auto px-4 mb-16">
+        <h2 className="font-display text-2xl md:text-3xl font-bold mb-2">For Youth &amp; Social Workers: The Support Teens Need</h2>
+        <p className="text-navy/60 mb-8">Filling the gap that schools and parents leave open</p>
+        <div className="space-y-4">
+          {data.recommendations.forYouthWorkers.map((rec, i) => (
+            <div key={i} className={`${CARD_BGS[i % CARD_BGS.length]} border-l-4 ${BORDER_COLORS[i % BORDER_COLORS.length]} rounded-r-xl p-6`}>
+              <h3 className="font-display font-bold text-navy mb-2">{rec.title}</h3>
+              <p className="text-sm text-navy/70 leading-relaxed">{rec.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Original 3-column cards */}
+      <section className="max-w-6xl mx-auto px-4 mb-16">
+        <h2 className="font-display text-2xl md:text-3xl font-bold mb-8">Summary Recommendations</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          {cards.map((card) => (
+          {originalCards.map((card) => (
             <div
               key={card.title}
               className={`rounded-2xl border p-8 ${card.color}`}
@@ -79,6 +122,28 @@ export default function RecommendationsPage() {
             {data.conclusions.map((conclusion, i) => (
               <div key={i} className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
                 <p className="text-navy/80 leading-relaxed">{conclusion}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Key Takeaways */}
+      <section className="max-w-4xl mx-auto px-4 mb-16">
+        <div className="bg-navy rounded-2xl p-8 text-white">
+          <h3 className="font-display text-2xl font-bold text-center mb-8">5 Key Takeaways</h3>
+          <div className="space-y-6">
+            {data.keyTakeaways.map((takeaway, i) => (
+              <div key={i} className="flex gap-4 items-start">
+                <span className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold ${
+                  ['bg-teal-500', 'bg-red-500', 'bg-amber-500', 'bg-purple-500', 'bg-blue-500'][i]
+                }`}>
+                  {i + 1}
+                </span>
+                <div>
+                  <p className="font-display font-bold text-white">{takeaway.title}</p>
+                  <p className="text-white/70 text-sm">{takeaway.description}</p>
+                </div>
               </div>
             ))}
           </div>

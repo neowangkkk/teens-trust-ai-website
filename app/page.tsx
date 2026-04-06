@@ -69,8 +69,9 @@ export default function HomePage() {
 
       {/* Stats Strip */}
       <section className="py-16 bg-light-gray">
-        <div className="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <StatCounter end={55} suffix="%" label="of teens use AI weekly" />
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <StatCounter end={55} suffix="%" label="use AI weekly" />
+          <StatCounter end={79} suffix="%" label="use AI monthly" />
           <StatCounter end={data.project.surveyResponses} label="survey responses" />
           <StatCounter end={data.project.studentResearchers} label="student researchers" />
         </div>
@@ -103,6 +104,38 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* The Comfort Paradox Highlight */}
+      <section className="py-20 bg-navy text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-accent font-semibold uppercase tracking-wide text-sm mb-4">The Comfort Paradox</p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
+            The More Teens Use AI, the Less They Worry About It
+          </h2>
+          <p className="text-white/70 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Our study found a statistically significant correlation (r = -0.50, p &lt; 0.0001):
+            daily users scored just 2.23/5 on risk awareness, compared to 4.00/5 for non-users.
+            Familiarity breeds comfort, but not necessarily understanding.
+          </p>
+          <div className="flex justify-center gap-4 sm:gap-8 mb-8">
+            <div className="bg-white/10 rounded-xl p-4 sm:p-6 text-center">
+              <p className="text-3xl sm:text-4xl font-bold text-red-400">4.00</p>
+              <p className="text-xs sm:text-sm text-white/60 mt-1">Rarely/Never use</p>
+            </div>
+            <div className="flex items-center text-white/40 text-2xl">&rarr;</div>
+            <div className="bg-white/10 rounded-xl p-4 sm:p-6 text-center">
+              <p className="text-3xl sm:text-4xl font-bold text-teal-400">2.23</p>
+              <p className="text-xs sm:text-sm text-white/60 mt-1">Daily users</p>
+            </div>
+          </div>
+          <Link
+            href="/findings#comfort-paradox"
+            className="inline-block px-8 py-3 bg-accent text-navy font-semibold rounded-full hover:bg-accent/90 transition-colors"
+          >
+            Explore the Data
+          </Link>
         </div>
       </section>
 
