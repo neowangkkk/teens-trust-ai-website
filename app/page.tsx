@@ -112,7 +112,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-accent font-semibold uppercase tracking-wide text-sm mb-4">The Comfort Paradox</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-            The More Teens Use AI, the Less They Worry About It
+            The More Teens Use AI, the Less They Worry
           </h2>
           <p className="text-white/70 mb-8 max-w-2xl mx-auto leading-relaxed">
             Our study found a statistically significant correlation (r = -0.50, p &lt; 0.0001):
